@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://0s27y0d1h728"]
+
+[ext_resource type="Script" path="res://scenes/cinematic_1.gd" id="1_hcbxx"]
+[ext_resource type="Theme" uid="uid://bxie45bab6fvj" path="res://temas/Tema_cinematica.tres" id="2_cmk30"]
+
+[node name="ColorRect" type="ColorRect"]
+offset_right = 1152.0
+offset_bottom = 642.0
+color = Color(0, 0, 0, 1)
+script = ExtResource("1_hcbxx")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 81.0
+offset_top = 169.0
+offset_right = 1071.0
+offset_bottom = 410.0
+theme = ExtResource("2_cmk30")
+text = "Aquí estoy… Draven Blackthorn, reducido a una sombra, vagando sin rumbo entre recuerdos que apenas sé si son reales. Encontré la carta, escrita con la mano de mi esposa… me pide que la busque. Pero, ¿y si solo es un engaño de mi propia mente rota?
+
+Esta carta es lo único que me queda, el único hilo que me ata a una vida que apenas recuerdo. Si ella vive, tal vez haya redención. Si no… tal vez solo sea otra trampa de mi delirio. Pero aún así, seguiré adelante. Un día más, un paso más. Hasta encontrar la verdad… o la locura completa."

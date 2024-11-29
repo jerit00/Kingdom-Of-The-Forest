@@ -1,0 +1,41 @@
+[gd_scene load_steps=4 format=3 uid="uid://bvtpso215a6l"]
+
+[ext_resource type="Texture2D" uid="uid://cb1plmalglnpd" path="res://sprites/Background.png" id="1_qtyrg"]
+[ext_resource type="Script" path="res://scripts/scripts/tween.gd" id="2_6vjqr"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_syr3w"]
+load_path = "res://.godot/imported/Anima.webp-244dfd40ef0056a59f16e4263221ab3b.ctex"
+
+[node name="Node2D" type="Node2D"]
+position = Vector2(-2, 4)
+
+[node name="Fondo" type="Sprite2D" parent="."]
+position = Vector2(577.5, 159.984)
+scale = Vector2(1.28341, 1.27116)
+texture = ExtResource("1_qtyrg")
+
+[node name="PantallaCarga" type="Node" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="PantallaCarga"]
+position = Vector2(570, 297.784)
+scale = Vector2(0.283673, 0.289355)
+texture = SubResource("CompressedTexture2D_syr3w")
+script = ExtResource("2_6vjqr")
+
+[node name="Control" type="Control" parent="PantallaCarga/Sprite2D"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -1744.37
+offset_top = -1099.83
+offset_right = -1704.37
+offset_bottom = -1059.83
+
+[node name="Label" type="Label" parent="PantallaCarga/Sprite2D/Control"]
+texture_filter = 4
+layout_mode = 0
+offset_left = 1550.55
+offset_top = 474.302
+offset_right = 1658.55
+offset_bottom = 497.302
+scale = Vector2(4.3463, 4.65937)
+text = "ESPERANDO..."

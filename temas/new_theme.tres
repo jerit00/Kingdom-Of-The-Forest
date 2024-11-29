@@ -1,0 +1,63 @@
+[gd_resource type="Theme" load_steps=8 format=3 uid="uid://b44tmn2w4jvj5"]
+
+[ext_resource type="FontFile" uid="uid://dqqtlcncl6fwl" path="res://Fonts/ka1.ttf" id="1_gt80g"]
+[ext_resource type="FontFile" uid="uid://be83cluytonq4" path="res://Fonts/Orbitron-VariableFont_wght.ttf" id="2_i1xad"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5ps6t"]
+bg_color = Color(0.638014, 0.620214, 0.68362, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4dbhy"]
+bg_color = Color(0.821029, 0, 0.0580904, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_er04i"]
+bg_color = Color(0.114227, 0.124813, 0.111966, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.123453, 0.347773, 0.255315, 1)
+corner_radius_top_left = 2
+corner_radius_top_right = 2
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
+shadow_color = Color(0.106074, 0.303167, 0.220738, 0.6)
+shadow_size = 11
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_j3sf6"]
+bg_color = Color(0.233932, 0.218743, 0.209679, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(1, 0.8, 0.8, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+shadow_color = Color(0.163979, 0.481479, 0.348083, 0.6)
+shadow_size = 7
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_i04cd"]
+
+[resource]
+BoxContainer/constants/separation = 4
+Button/colors/font_color = Color(0.188417, 0.742419, 0.471943, 1)
+Button/font_sizes/font_size = 20
+Button/fonts/font = ExtResource("1_gt80g")
+Button/styles/disabled = SubResource("StyleBoxFlat_5ps6t")
+Button/styles/pressed = SubResource("StyleBoxFlat_4dbhy")
+Label/colors/font_color = Color(0.857367, 0, 0.0831019, 1)
+Label/colors/font_outline_color = Color(1, 1, 1, 1)
+Label/colors/font_shadow_color = Color(0.633413, 0.0698032, 0.641594, 0)
+Label/constants/shadow_offset_x = 3
+Label/constants/shadow_offset_y = 7
+Label/font_sizes/font_size = 20
+Label/fonts/font = ExtResource("2_i1xad")
+Label/styles/normal = SubResource("StyleBoxFlat_er04i")
+PanelContainer/styles/panel = SubResource("StyleBoxFlat_j3sf6")
+VBoxContainer/colors/c = Color(0.681651, 0.684197, 0.708113, 1)
+VBoxContainer/styles/l = SubResource("StyleBoxEmpty_i04cd")

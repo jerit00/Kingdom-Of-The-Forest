@@ -1,0 +1,32 @@
+[gd_scene load_steps=3 format=3 uid="uid://bvtpso215a6l"]
+
+[ext_resource type="Texture2D" uid="uid://bcqtpq0edrdd8" path="res://sprites/sprites/Anima.webp" id="1_etomo"]
+[ext_resource type="Script" path="res://scripts/scripts/tween.gd" id="2_0tm0i"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="PantallaCarga" type="Node" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="PantallaCarga"]
+position = Vector2(572, 297)
+scale = Vector2(0.330204, 0.290954)
+texture = ExtResource("1_etomo")
+script = ExtResource("2_0tm0i")
+
+[node name="Control" type="Control" parent="PantallaCarga/Sprite2D"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -1744.37
+offset_top = -1099.83
+offset_right = -1704.37
+offset_bottom = -1059.83
+
+[node name="Label" type="Label" parent="PantallaCarga/Sprite2D/Control"]
+texture_filter = 4
+layout_mode = 0
+offset_left = 1550.55
+offset_top = 474.302
+offset_right = 1658.55
+offset_bottom = 497.302
+scale = Vector2(4.3463, 4.65937)
+text = "ESPERANDO..."

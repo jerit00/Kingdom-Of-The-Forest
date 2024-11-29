@@ -1,0 +1,42 @@
+[gd_scene load_steps=6 format=3 uid="uid://cjsyghbp8mx7i"]
+
+[ext_resource type="Texture2D" uid="uid://criyagm164fdx" path="res://sprites/pngegg.png" id="1_0mpid"]
+[ext_resource type="Script" path="res://scripts/scripts/pocion.gd" id="1_ur6yj"]
+[ext_resource type="Theme" uid="uid://b44tmn2w4jvj5" path="res://temas/new_theme.tres" id="2_hmhdw"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_fnhxh"]
+radius = 21.2132
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_vjlfg"]
+radius = 27.074
+
+[node name="Pocion" type="Area2D"]
+light_mask = 2
+position = Vector2(-17, -81)
+collision_layer = 2
+script = ExtResource("1_ur6yj")
+
+[node name="Label" type="Label" parent="."]
+offset_left = -98.0
+offset_top = -92.0
+offset_right = 166.0
+offset_bottom = -52.0
+scale = Vector2(0.766276, 1.12496)
+theme = ExtResource("2_hmhdw")
+text = "Esto recupera tu salud."
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+light_mask = 2
+shape = SubResource("CircleShape2D_fnhxh")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.0616666, 0.0766667)
+texture = ExtResource("1_0mpid")
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_vjlfg")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
